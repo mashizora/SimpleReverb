@@ -14,8 +14,8 @@ CPMAddPackage("gh:juce-framework/JUCE#${JUCE_VERSION}")
 # More optional arguments can be found at "JUCE/docs/CMake API.md"
 juce_add_plugin(${BASE_TARGET_NAME}
     COMPANY_NAME UMA
-    PLUGIN_MANUFACTURER_CODE Juce
-    PLUGIN_CODE Dem0
+    PLUGIN_MANUFACTURER_CODE UMAC
+    PLUGIN_CODE REVB
 
     IS_SYNTH FALSE
     NEEDS_MIDI_INPUT FALSE
@@ -23,7 +23,7 @@ juce_add_plugin(${BASE_TARGET_NAME}
     IS_MIDI_EFFECT FALSE
     EDITOR_WANTS_KEYBOARD_FOCUS FALSE
 
-    FORMATS AU VST3 Standalone
+    FORMATS VST3 Standalone
     COPY_PLUGIN_AFTER_BUILD TRUE)
 
 target_sources(${BASE_TARGET_NAME}
